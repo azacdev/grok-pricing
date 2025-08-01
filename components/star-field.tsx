@@ -16,8 +16,8 @@ interface StarFieldProps {
 
 const StarField = ({ paddingPercentage = 0 }: StarFieldProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationFrameId = useRef<number | null>(null);
   const stars = useRef<Star[]>([]);
+  const animationFrameId = useRef<number | null>(null);
   const numStars = 100;
 
   const getPaddedDimensions = useCallback(
